@@ -9,7 +9,7 @@
 |  主板  | ✅    |     华硕PRIME-Z370-A(可刷Z370-F）（BIOS更新3004）     |
 |  eGPU   |   ✅  |   XFX Radeon RX 580 2304SP     |
 |  iGPU  | ✅    |              Intel UHD 630（无输出，辅助硬解）             |
-|  内存  | ✅    |         Deler DDR4-16G 宇瞻黑豹8G-2667Mhz（X.M.P.）       |
+|  内存  | ✅    |         Deler DDR4-16G 宇瞻黑豹8G-2667Mhz（X.M.P.）        |
 |  硬盘  | ✅    |       华南金牌 Nvme 128GB         |
 |  屏幕  | ✅    | Aigon 1920*1080 FHD  |
 |  声卡  | ✅    |         Realtek ALCS1220A（内建）          |
