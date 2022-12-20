@@ -155,3 +155,6 @@
 ## 鸣谢
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
 - [Apple](https://www.apple.com) 开发的 [macOS](https://www.apple.com/macos)
+- 定制usb转自国光大佬
+- 拷贝esp与更新oc转自LoonGasCoom（https://www.jzchen.top/）
+- 核显ID速查来自[黑果小兵的部落阁](https://blog.daliansky.net/)
