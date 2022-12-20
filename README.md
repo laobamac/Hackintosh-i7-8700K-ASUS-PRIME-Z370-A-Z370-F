@@ -82,6 +82,45 @@
 <li>安装完成进入系统，成功!</li>
 </ul>
 
+#### 修改开始
+- 重启到`WIndows`或者`WinPe`都可以
+- 打开`DiskGenius`
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-1.png)
+- 找到你u盘的`ESP`分区并把`EFI`复制到桌面即可
+- 然后找到你的`硬盘` `ESP`分区（注意是这里要是`WINDOWS的ESP`）
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-2.png)
+- 点开`EFI`文件夹把刚才拷贝到的桌面的`EFI`里面的`OC`文件夹丢到`EFI`里面
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-3.png)
+- 然后点击顶部菜单栏的`工具`-`设置` `UEFIBIOS`启动项
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-4.png)
+- 添加一个启动项，把路径指向`ESP-EFI-OC-OpenCore.efi`即可
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-5.png)
+- 把这个启动项修改一下名字上移到第一位`保存`即可
+### 英特尔wifi
+- WIFI请加载驱动包对应版本驱动
+### 英特尔蓝牙
+- bigsur：`IntelBluetoothFirmware.kext`
+- Monterey：`IntelBluetoothFirmware.kext` `BlueToolFixup.kext`
+- Ventura：`IntelBluetoothFirmware.kext` `BlueToolFixup.kext` `IntelBTPatcher.kext`
+### 开机优化
+- 三星硬盘`trim`会导致开机慢
+- 解决方法：`SetApfsTrimTimeout`设置为`0`
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E7%A1%AC%E7%9B%98-1.png)
+
+### 设置默认启动项
+- `config.plist`勾上仿冒苹果快捷键`PollAppleHotKey`，在启动选择界面，先选中要启动的项，然后按键盘的 `Ctrl` + `Enter` 进入系统即可
+- 也有看到说在 `设置`-`启动磁盘` 可选择默认启动项,修改后重启
+### 更新oc
+- 下载最新版本`OCAT`(https://github.com/ic005k/OCAuxiliaryTools/releases)
+- 挂载你的`efi`分区（也叫`esp`分区）
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-1.jpg)
+- 挂载后先不要着急打开，先把`OCAT`（即`OCAuxiliaryTools`）同步一下再打开
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-2.jpg)
+- 然后再打开`Config.plist`。首先点击全选，然后`检查kext`更新，更新`kext`，后点击选择`opencore版本`，选择`最新版`，`获取opencore`，后点击`同步` `保存`即可
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-3.jpg)
+- 保存重启即可
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
+
 # 双系统时间错误
 <li>这是一个很常见的macOS + Windows的冲突，因为计时方式不同。</li></br>
 <li>解决方式也很简单，在Windows下管理员cmd执行</li></br>
