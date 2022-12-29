@@ -27,7 +27,7 @@
 <li><strong>USB的S3唤醒</strong> 完全支持（仅测试华硕PRIME-Z370-A）</li>
 </ul>
 </li>
-<li><strong>隔空投送-接力</strong> 在<code>macOS Big Sur</code>完全支持，在<code>macOS Monterey</code><code>macOS Ventura</code>只能单向，更换CS2、CD网卡解决</li>
+<li><strong>隔空投送-接力</strong> 在<code>macOS Big Sur</code>完全支持，在<code>macOS Monterey</code><code>macOS Ventura</code>已经实现双向隔空！！！</li>
 </ul>
 </li>
 <li><strong>随航</strong>支持！核显UHD同时实现硬解加速</li>
@@ -35,7 +35,7 @@
 </li>
 <li><strong>HDMI</strong> 完全支持
 <ul dir="auto">
-<li>最低分辨率1366*768，不支持1680*1050，否则可能会损坏你的显示器。3*DP与HDMI工作正常，DVI无法输出</li>
+<li>不要使用较老的（比如VGA）否则可能会损坏你的显示器。3*DP与HDMI工作正常，DVI无法输出</li>
 </ul>
 </li>
 <li><strong>独立显卡</strong> 完全支持  报错请刷VBIOS
