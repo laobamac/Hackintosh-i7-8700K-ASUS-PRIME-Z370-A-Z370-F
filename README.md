@@ -1,5 +1,5 @@
-# i7-8700K-ASUS-PRIME-Z370-A
-# i7-8700K-ASUS-ROG-Strix-Z370-F
+# Hackintosh-i7-8700K-ASUS-PRIME-Z370-A
+# Hackintosh-i7-8700K-ASUS-ROG-Strix-Z370-F
 
 |   规格   | 状态  |                   详细信息                 |
 | :-----: | ---- | :---------------------------------------: |
