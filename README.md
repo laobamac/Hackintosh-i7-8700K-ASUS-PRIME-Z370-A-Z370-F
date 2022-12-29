@@ -1,9 +1,9 @@
 # i7-8700K-ASUS-PRIME-Z370-A
-
+# i7-8700K-ASUS-ROG-Strix-Z370-F
 
 |   规格   | 状态  |                   详细信息                 |
 | :-----: | ---- | :---------------------------------------: |
-|  型号  | ✅    |     i7-8700K-ASUS-PRIME-Z370-A      |
+|  型号  | ✅    |     i7-8700K-ASUS-PRIME-Z370-A/ASUS-ROG-Strix-Z370-F     |
 |  系统  | ✅    |   10.15-13.2     |
 |  CPU   | ✅    |    Intel Core i7-8700K 6C12T Processor    |
 |  主板  | ✅    |     华硕PRIME-Z370-A(可刷Z370-F）（BIOS更新3004）     |
