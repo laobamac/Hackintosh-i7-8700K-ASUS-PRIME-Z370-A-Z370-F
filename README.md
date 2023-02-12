@@ -159,7 +159,7 @@
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaults write com.apple.AppleGVA gvaForceAMDKE -boolean yes"><pre class="notranslate"><code>defaults write com.apple.AppleGVA gvaForceAMDKE -boolean yes</code></pre></div></li>
 <li>缺点
 <ul dir="auto">
-<li>由于以上方法原理为强制系统使用AMD显卡解码，会导致无法使用字体自带录屏。OBS等不受影响</li>
+<li>由于以上方法原理为强制系统使用AMD显卡解码，会导致无法使用自带录屏。OBS等不受影响</li>
 <li>恢复方法：
 <ul dir="auto">
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaults write com.apple.AppleGVA gvaForceAMDKE -boolean no"><pre class="notranslate"><code>defaults write com.apple.AppleGVA gvaForceAMDKE -boolean no</code></pre></div></li>
