@@ -50,7 +50,7 @@
 <ul dir="auto"> 
 </ul>
 </li>
-<li>支持原生<strong>CPU电源管理</strong>等其他功能,已经使用<code>iMac19，1</code>来获得<code>H264</code>以及<code>HEVC</code>硬解支持</li>
+<li>支持原生<strong>CPU电源管理</strong>等其他功能,已经使用<code>iMac19，2</code>来获得<code>H264</code>以及<code>HEVC</code>硬解支持</li>
 </ul>
 <ul dir="auto"> 
 </ul>
@@ -71,6 +71,7 @@
 <li>Hyper-Threading</li>
 <li>EHCI/XHCI Hand-off</li>
 <li>OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose Other type)</li>
+<strong>如果引导过程中卡在<code<Pci Configuration End 0x....</code>或其他显卡字符，请确认BIOS中关闭了Resize-Gpu-Bar</strong>
 
 # 使用方法
 <ul dir="auto">
@@ -151,6 +152,23 @@
 <p dir="auto">也有看到说在 <code>设置</code>-<code>启动磁盘</code> 可选择默认启动项,修改后重启</p>
 </li>
 </ul>
+
+# Apple Music播放无损音频
+黑苹果的Apple Music默认是无法播放无损音频的，会卡在00:00或无限切歌，因为Apple Music会验证设备，而未经认证的英特尔核显会导致Apple Music触发版权机制，顾名思义，跳过验证机制即可解决问题。
+<li>解决方法：终端运行
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaults write com.apple.AppleGVA gvaForceAMDKE -boolean yes"><pre class="notranslate"><code>defaults write com.apple.AppleGVA gvaForceAMDKE -boolean yes</code></pre></div></li>
+<li>缺点
+<ul dir="auto">
+<li>由于以上方法原理为强制系统使用AMD显卡解码，会导致无法使用字体自带录屏。OBS等不受影响</li>
+<li>恢复方法：
+<ul dir="auto">
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaults write com.apple.AppleGVA gvaForceAMDKE -boolean no"><pre class="notranslate"><code>defaults write com.apple.AppleGVA gvaForceAMDKE -boolean no</code></pre></div></li>
+
+<li>注：
+<ul dir="auto">
+<li>仅核显 无独立显卡的设备无法使用</li>
+<li>笔记本设备无法使用</li>
+<li>使用NVIDIA显卡的设备无法使用</li>
 
 ## 鸣谢
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
