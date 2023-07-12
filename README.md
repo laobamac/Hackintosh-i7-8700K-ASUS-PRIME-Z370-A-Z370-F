@@ -13,7 +13,8 @@
 |  硬盘  | ✅    |       华南金牌 Nvme 128GB         |
 |  屏幕  | ✅    | Aigon 1920*1080 FHD  |
 |  声卡  | ✅    |         Realtek ALCS1220A（内建）          |
-|  无线网卡 | ✅    |  博通BCM943224PCIEBT2    |
+|  无线网卡 | ✅ (Sonoma ❌)   |  博通BCM943224PCIEBT2    |
+|  无线网卡 | ✅ (Sonoma ✅)   |  英特尔AC7260    |
 |  有线网卡 |  ✅  |   Intel i219-V千兆以太网  |
 |  睡眠  | ✅    |                原生休眠               |
 
@@ -33,7 +34,9 @@
 <li><strong>随航</strong>支持！核显UHD同时实现硬解加速</li>
 </ul>
 </li>
-<li><strong>HDMI</strong> 完全支持
+<li><strong>拨通网卡</strong> 在<code>macOS Sonoma</code>不受支持（）或者是暂时性，在<code>macOS Sonoma</code>请使用Intel WiFi卡！！！</li>
+</ul>
+</li><li><strong>HDMI</strong> 完全支持
 <ul dir="auto">
 <li>不要使用较老的（比如VGA）否则可能会损坏你的显示器。3*DP与HDMI工作正常，DVI无法输出</li>
 </ul>
@@ -176,3 +179,4 @@
 - 定制usb转自国光大佬
 - 拷贝esp与更新oc转自LoonGasCoom（https://www.jzchen.top/）
 - 核显ID速查来自[黑果小兵的部落阁](https://blog.daliansky.net/)
+- [zxystd](https://github.com/zxystd/)开发的[itlwm](https://github.com/OpenIntelWireless/itlwm)
