@@ -4,7 +4,7 @@
 |   规格   | 状态  |                   详细信息                 |
 | :-----: | ---- | :---------------------------------------: |
 |  型号  | ✅    |     i7-8700K-ASUS-PRIME-Z370-A/ASUS-ROG-Strix-Z370-F     |
-|  系统  | ✅    |   10.15-13.2     |
+|  系统  | ✅    |   10.15-14.0     |
 |  CPU   | ✅    |    Intel Core i7-8700K 6C12T Processor    |
 |  主板  | ✅    |     华硕PRIME-Z370-A(可刷Z370-F）（BIOS更新3004）     |
 |  eGPU   |   ✅  |   XFX Radeon RX 580 2304SP     |
@@ -34,7 +34,7 @@
 <li><strong>随航</strong>支持！核显UHD同时实现硬解加速</li>
 </ul>
 </li>
-<li><strong>拨通网卡</strong> 在<code>macOS Sonoma</code>不受支持（）或者是暂时性，在<code>macOS Sonoma</code>请使用Intel WiFi卡！！！</li>
+<li><strong>拨通网卡</strong> 在<code>macOS Sonoma</code>需要通过OCLP获取不稳定的支持，在<code>macOS Sonoma</code>请使用Intel WiFi卡！！！</li>
 </ul>
 </li><li><strong>HDMI</strong> 完全支持
 <ul dir="auto">
