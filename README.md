@@ -34,7 +34,7 @@
 <li><strong>随航</strong>支持！核显UHD同时实现硬解加速</li>
 </ul>
 </li>
-<li><strong>拨通网卡</strong> 在<code>macOS Sonoma</code>需要通过OCLP获取不稳定的支持，在<code>macOS Sonoma</code>请使用Intel WiFi卡！！！</li>
+<li><strong>博通网卡</strong> 在<code>macOS Sonoma</code>需要通过OCLP获取不稳定的支持，在<code>macOS Sonoma</code>请使用Intel WiFi卡！！！</li>
 </ul>
 </li><li><strong>HDMI</strong> 完全支持
 <ul dir="auto">
@@ -88,33 +88,33 @@
 
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
 - 输入` D `然后回车来探测电脑上的端口
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E5%AE%9A%E5%88%B6-2.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E5%AE%9A%E5%88%B6-2.png)
 - 分别在各个 USB 接口插入` USB2.0 `和` USB 3.X `的设备，每插入一次停留` 5 秒钟`，如果有` Type-C `设备的话，正反都要分别插入记录
 - 都挨个插一遍后，输入` B` 回车即可返回主菜单
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E5%AE%9A%E5%88%B6-3.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E5%AE%9A%E5%88%B6-3.png)
 - 回到主菜单，输入` S `来查看端口探测的结果
 - 此时结果查看感觉没问题的话，输入` K `回车，即可导出`UTBMap.kext`文件（一般情况下会保存在当前程序的同级目录下）
-  ![image](https://user-images.githubusercontent.com/99300084/206326768-84ef300a-e64e-4978-9e30-9c955d537a28.png)
+  ![image](https://user-images_githubusercontent.github.ink/99300084/206326768-84ef300a-e64e-4978-9e30-9c955d537a28.png)
 - 除了上述生成的`UTBMap.kext`文件以外，我们还需要配合`USBToolBox.kext`使用（仓库）
 - 将上述两个 Kext 放到 OC 的 Kexts 文件夹下面并加载，去除usbport.kext
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E5%AE%9A%E5%88%B6-5.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E5%AE%9A%E5%88%B6-5.png)
 - 重启即可生效，至此你的 USB 基本上定制完了，尽情使用吧
 
 #### 修改开始
 - 重启到`WIndows`或者`WinPe`都可以
 - 打开`DiskGenius`
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-1.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-1.png)
 - 找到你u盘的`ESP`分区并把`EFI`复制到桌面即可
 - 然后找到你的`硬盘` `ESP`分区（注意是这里要是`WINDOWS的ESP`）
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-2.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-2.png)
 - 点开`EFI`文件夹把刚才拷贝到的桌面的`EFI`里面的`OC`文件夹丢到`EFI`里面
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-3.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-3.png)
 - 然后点击顶部菜单栏的`工具`-`设置` `UEFIBIOS`启动项
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-4.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-4.png)
 - 添加一个启动项，把路径指向`ESP-EFI-OC-OpenCore.efi`即可
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-5.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/DG-5.png)
 - 把这个启动项修改一下名字上移到第一位`保存`即可
 ### 英特尔wifi
 - WIFI请加载驱动包对应版本驱动
@@ -125,21 +125,21 @@
 ### 开机优化
 - 三星硬盘`trim`会导致开机慢
 - 解决方法：`SetApfsTrimTimeout`设置为`0`
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E7%A1%AC%E7%9B%98-1.png)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E7%A1%AC%E7%9B%98-1.png)
 
 ### 设置默认启动项
 - `config.plist`勾上仿冒苹果快捷键`PollAppleHotKey`，在启动选择界面，先选中要启动的项，然后按键盘的 `Ctrl` + `Enter` 进入系统即可
 - 也有看到说在 `设置`-`启动磁盘` 可选择默认启动项,修改后重启
 ### 更新oc
-- 下载最新版本`OCAT`(https://github.com/ic005k/OCAuxiliaryTools/releases)
+- 下载最新版本`OCAT`(https://github.ink/ic005k/OCAuxiliaryTools/releases)
 - 挂载你的`efi`分区（也叫`esp`分区）
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-1.jpg)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-1.jpg)
 - 挂载后先不要着急打开，先把`OCAT`（即`OCAuxiliaryTools`）同步一下再打开
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-2.jpg)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-2.jpg)
 - 然后再打开`Config.plist`。首先点击全选，然后`检查kext`更新，更新`kext`，后点击选择`opencore版本`，选择`最新版`，`获取opencore`，后点击`同步` `保存`即可
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-3.jpg)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-3.jpg)
 - 保存重启即可
-  ![Image text](https://github.com/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
+  ![Image text](https://github.ink/laobamac/i7-8700K-ASUS-PRIME-Z370-A/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
 
 # 双系统时间错误
 <li>这是一个很常见的macOS + Windows的冲突，因为计时方式不同。</li></br>
@@ -174,9 +174,9 @@
 <li>使用NVIDIA显卡的设备无法使用</li>
 
 ## 鸣谢
-- [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
+- [Acidanthera](https://github.ink/acidanthera) 开发的 [OpenCore](https://github.ink/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.ink/acidanthera)
 - [Apple](https://www.apple.com) 开发的 [macOS](https://www.apple.com/macos)
 - 定制usb转自国光大佬
 - 拷贝esp与更新oc转自LoonGasCoom（https://www.jzchen.top/）
 - 核显ID速查来自[黑果小兵的部落阁](https://blog.daliansky.net/)
-- [zxystd](https://github.com/zxystd/)开发的[itlwm](https://github.com/OpenIntelWireless/itlwm)
+- [zxystd](https://github.ink/zxystd/)开发的[itlwm](https://github.ink/OpenIntelWireless/itlwm)
